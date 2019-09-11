@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Welcome to Freelaflix</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,8 +13,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                    <ul>
+                        @foreach($users as $user)
+                            <li>{{$user->name}} <small><i>joined {{$user->created_at->diffForHumans()}} ago</i></small></li>
+                        @endforeach
+                    </ul>
                 </div>
             </div>
         </div>
