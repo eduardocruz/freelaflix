@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Welcome to Freelaflix</div>
+                <div class="card-header">Welcome to Freelaflix, the best freelancer community in Brazil.</div>
 
                 <div class="card-body">
                     @if (session('status'))
